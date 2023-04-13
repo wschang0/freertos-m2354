@@ -10,14 +10,14 @@
       <TargetName>FreeRTOSDemo_ns</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6150000::V6.15::ARMCLANG</pCCUsed>
+      <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>M2354KJFAE</Device>
           <Vendor>Nuvoton</Vendor>
-          <PackID>Nuvoton.NuMicro_DFP.1.3.13</PackID>
-          <PackURL>https://github.com/OpenNuvoton/cmsis-packs/raw/master/</PackURL>
+          <PackID>Nuvoton.NuMicro_DFP.1.3.18</PackID>
+          <PackURL>https://github.com/OpenNuvoton/cmsis-packs/raw/master/Nuvoton_DFP/</PackURL>
           <Cpu>IRAM(0x20000000,0x40000) IROM(0x00000000,0x100000) CPUTYPE("Cortex-M23") TZ CLOCK(12000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -186,6 +186,7 @@
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
+            <nBranchProt>0</nBranchProt>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -339,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>DEBUG_PORT=UART0_NS,TFM_PARTITION_LOG_LEVEL=2,ITS_MAX_ASSET_SIZE=512,TFM_SP_LOG_RAW_ENABLED=1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Config;..\..\..\..\..\Source\include;..\..\..\..\Common\include;..\..\..\..\..\Source\portable\GCC\ARM_CM23_NTZ\non_secure;..\..\..\..\..\..\trusted-firmware-m-m2354\build\install\interface\include;..\..\..\..\..\..\trusted-firmware-m-m2354\build\lib\ext\tfm_test_repo-src\test\framework;..\..\..\..\..\..\trusted-firmware-m-m2354\build\lib\ext\tfm_test_repo-src\ns_interface;..\..\..\..\..\..\trusted-firmware-m-m2354\secure_fw\partitions\lib\sprt\include;..\..\..\..\..\..\trusted-firmware-m-m2354\secure_fw\spm\include;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\include;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\ext\common;..\..\..\..\..\..\trusted-firmware-m-m2354\secure_fw\spm\cmsis_func\include;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\ext\target\nuvoton\m2354\device\include;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\ext\target\nuvoton\m2354\bsp\Device\Nuvoton\M2354\Include;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\ext\target\nuvoton\m2354\bsp\Library\StdDriver\inc;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\ext\cmsis;..\..\..\..\..\..\trusted-firmware-m-m2354\platform\ext\target\nuvoton\common\bsp\StdDriver\inc;..\..\..\..\..\..\trusted-firmware-m-m2354\build\lib\ext\tfm_test_repo-src\test\test_services\tfm_core_test;..\..\..\..\..\..\trusted-firmware-m-m2354\build\generated\interface\include</IncludePath>
+              <IncludePath>..\..\..\Nuvoton_Code\CMSIS\Include;..\..\..\Nuvoton_Code\Device\Nuvoton\M2354\Include;..\..\..\Nuvoton_Code\StdDriver\inc;..\Config;..\..\..\..\..\Source\include;..\..\..\..\Common\include;..\..\..\..\..\Source\portable\GCC\ARM_CM23_NTZ\non_secure;d:\out\m2354\install\interface\include;..\..\..\..\..\..\TF-M_Review\tfm_test_repo-src\test\framework;..\..\..\..\..\..\TF-M_Review\tfm_test_repo-src\ns_interface;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\secure_fw\partitions\lib\sprt\include;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\secure_fw\spm\include;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\include;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\ext\common;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\secure_fw\spm\cmsis_func\include;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\ext\target\nuvoton\m2354\device\include;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\ext\target\nuvoton\m2354\bsp\Device\Nuvoton\M2354\Include;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\ext\target\nuvoton\m2354\bsp\Library\StdDriver\inc;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\ext\cmsis;..\..\..\..\..\..\TF-M_Review\trusted-firmware-m\platform\ext\target\nuvoton\common\bsp\StdDriver\inc;..\..\..\..\..\..\TF-M_Review\tfm_test_repo-src\test\test_services\tfm_core_test;D:\out\install\interface\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -577,71 +578,52 @@
             <File>
               <FileName>s_veneers.o</FileName>
               <FileType>3</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\install\interface\lib\s_veneers.o</FilePath>
+              <FilePath>d:\out\m2354\install\interface\lib\s_veneers.o</FilePath>
             </File>
             <File>
               <FileName>libtfm_regression_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\platform\target\libtfm_regression_ns.a</FilePath>
+              <FilePath>D:\out\m2354\platform\target\libtfm_regression_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_api_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\app\libtfm_api_ns.a</FilePath>
+              <FilePath>D:\out\m2354\app\libtfm_api_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_ns_integration_test.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\app\libtfm_ns_integration_test.a</FilePath>
+              <FilePath>D:\out\m2354\app\libtfm_ns_integration_test.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_ns_log.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\ns_log\libtfm_ns_log.a</FilePath>
+              <FilePath>D:\out\m2354\ns_log\libtfm_ns_log.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_qcbor_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\qcbor\libtfm_qcbor_ns.a</FilePath>
+              <FilePath>D:\out\m2354\test\suites\qcbor\libtfm_qcbor_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_qcbor_test.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\qcbor\libtfm_qcbor_test.a</FilePath>
+              <FilePath>D:\out\m2354\test\suites\qcbor\libtfm_qcbor_test.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_t_cose_test.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\t_cose\libtfm_t_cose_test.a</FilePath>
+              <FilePath>D:\out\m2354\test\suites\t_cose\libtfm_t_cose_test.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_attestation_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\attestation\libtfm_test_suite_attestation_ns.a</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>1</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules>attest_public_key.o|1|0|0|0,attest_token_test.o|1|0|0|0,attest_token_decode_common.o|1|0|0|0,qcbor_util.o|1|0|0|0,attest_token_decode_asymmetric.o|1|0|0|0,attest_asymmetric_ns_interface_testsuite.o|1|0|0|0,t_cose_sign1_sign.o|1|0|0|0,t_cose_sign1_verify.o|1|0|0|0,t_cose_util.o|1|0|0|0,t_cose_parameters.o|1|0|0|0,t_cose_psa_crypto.o|1|0|0|0</IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds/>
-              </FileOption>
+              <FilePath>D:\out\m2354\test\suites\attestation\libtfm_test_suite_attestation_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_core_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\core\libtfm_test_suite_core_ns.a</FilePath>
+              <FilePath>D:\out\m2354\test\suites\core\libtfm_test_suite_core_ns.a</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -665,55 +647,17 @@
             <File>
               <FileName>libtfm_test_suite_crypto_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\crypto\libtfm_test_suite_crypto_ns.a</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>1</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules>crypto_tests_common.o|1|0|0|0,crypto_ns_interface_testsuite.o|1|0|0|0</IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds/>
-              </FileOption>
+              <FilePath>D:\out\m2354\test\suites\crypto\libtfm_test_suite_crypto_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_ipc_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\ipc\libtfm_test_suite_ipc_ns.a</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>1</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules>ipc_ns_interface_testsuite.o|1|0|0|0</IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds/>
-              </FileOption>
+              <FilePath>D:\out\m2354\test\suites\ipc\libtfm_test_suite_ipc_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_its_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\its\libtfm_test_suite_its_ns.a</FilePath>
+              <FilePath>D:\out\m2354\test\suites\its\libtfm_test_suite_its_ns.a</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -737,79 +681,22 @@
             <File>
               <FileName>libtfm_test_suite_platform_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\platform\libtfm_test_suite_platform_ns.a</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>1</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules>platform_tests_common.o|1|0|0|0,platform_ns_interface_testsuite.o|1|0|0|0</IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds/>
-              </FileOption>
+              <FilePath>D:\out\m2354\test\suites\platform\libtfm_test_suite_platform_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_ps_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\ps\libtfm_test_suite_ps_ns.a</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>1</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules>ns_test_helpers.o|1|0|0|0,psa_ps_ns_interface_testsuite.o|1|0|0|0</IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds/>
-              </FileOption>
+              <FilePath>C:\M2354_v1\trusted-firmware-m-m2354\build\test\suites\ps\libtfm_test_suite_ps_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_qcbor_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\qcbor\libtfm_test_suite_qcbor_ns.a</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>1</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules>qcbor_ns_testsuite.o|1|0|0|0</IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds/>
-              </FileOption>
+              <FilePath>D:\out\m2354\test\suites\qcbor\libtfm_test_suite_qcbor_ns.a</FilePath>
             </File>
             <File>
               <FileName>libtfm_test_suite_t_cose_ns.a</FileName>
               <FileType>4</FileType>
-              <FilePath>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\t_cose\libtfm_test_suite_t_cose_ns.a</FilePath>
+              <FilePath>D:\out\m2354\test\suites\t_cose\libtfm_test_suite_t_cose_ns.a</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>

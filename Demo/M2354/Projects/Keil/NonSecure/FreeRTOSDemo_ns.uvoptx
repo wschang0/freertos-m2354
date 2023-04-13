@@ -103,7 +103,7 @@
         <bEvRecOn>1</bEvRecOn>
         <bSchkAxf>0</bSchkAxf>
         <bTchkAxf>0</bTchkAxf>
-        <nTsel>20</nTsel>
+        <nTsel>19</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -182,7 +182,7 @@
         <AscS4>0</AscS4>
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
-        <TrcWin>1</TrcWin>
+        <TrcWin>0</TrcWin>
         <newCpu>0</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
@@ -199,28 +199,6 @@
       <pszMrulep></pszMrulep>
       <pSingCmdsp></pSingCmdsp>
       <pMultCmdsp></pMultCmdsp>
-      <SystemViewers>
-        <Entry>
-          <Name>System Viewer\CLK</Name>
-          <WinId>35904</WinId>
-        </Entry>
-        <Entry>
-          <Name>System Viewer\GPIOD_NS</Name>
-          <WinId>35903</WinId>
-        </Entry>
-        <Entry>
-          <Name>System Viewer\PD_NS</Name>
-          <WinId>35902</WinId>
-        </Entry>
-        <Entry>
-          <Name>System Viewer\SCU</Name>
-          <WinId>35901</WinId>
-        </Entry>
-        <Entry>
-          <Name>System Viewer\SYS</Name>
-          <WinId>35905</WinId>
-        </Entry>
-      </SystemViewers>
     </TargetOption>
   </Target>
 
@@ -553,7 +531,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\install\interface\lib\s_veneers.o</PathWithFileName>
+      <PathWithFileName>d:\out\m2354\install\interface\lib\s_veneers.o</PathWithFileName>
       <FilenameWithoutPath>s_veneers.o</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -565,7 +543,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\platform\target\libtfm_regression_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\platform\target\libtfm_regression_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_regression_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -577,7 +555,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\app\libtfm_api_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\app\libtfm_api_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_api_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -589,7 +567,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\app\libtfm_ns_integration_test.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\app\libtfm_ns_integration_test.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_ns_integration_test.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -601,7 +579,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\ns_log\libtfm_ns_log.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\ns_log\libtfm_ns_log.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_ns_log.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -613,7 +591,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\qcbor\libtfm_qcbor_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\qcbor\libtfm_qcbor_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_qcbor_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -625,7 +603,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\qcbor\libtfm_qcbor_test.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\qcbor\libtfm_qcbor_test.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_qcbor_test.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -637,7 +615,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\t_cose\libtfm_t_cose_test.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\t_cose\libtfm_t_cose_test.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_t_cose_test.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -649,7 +627,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\attestation\libtfm_test_suite_attestation_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\attestation\libtfm_test_suite_attestation_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_attestation_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -661,7 +639,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\core\libtfm_test_suite_core_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\core\libtfm_test_suite_core_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_core_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -673,7 +651,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\crypto\libtfm_test_suite_crypto_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\crypto\libtfm_test_suite_crypto_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_crypto_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -685,7 +663,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\ipc\libtfm_test_suite_ipc_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\ipc\libtfm_test_suite_ipc_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_ipc_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -697,7 +675,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\its\libtfm_test_suite_its_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\its\libtfm_test_suite_its_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_its_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -709,7 +687,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\platform\libtfm_test_suite_platform_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\platform\libtfm_test_suite_platform_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_platform_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -721,7 +699,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\ps\libtfm_test_suite_ps_ns.a</PathWithFileName>
+      <PathWithFileName>C:\M2354_v1\trusted-firmware-m-m2354\build\test\suites\ps\libtfm_test_suite_ps_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_ps_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -733,7 +711,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\qcbor\libtfm_test_suite_qcbor_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\qcbor\libtfm_test_suite_qcbor_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_qcbor_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -745,7 +723,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\trusted-firmware-m-m2354\build\test\suites\t_cose\libtfm_test_suite_t_cose_ns.a</PathWithFileName>
+      <PathWithFileName>D:\out\m2354\test\suites\t_cose\libtfm_test_suite_t_cose_ns.a</PathWithFileName>
       <FilenameWithoutPath>libtfm_test_suite_t_cose_ns.a</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
